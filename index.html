@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-container">
+            <div class="box">
+                <img src="http://cdn.shopify.com/s/files/1/0997/6284/products/1_19e90644-ddf3-4b4d-9c32-9b96a33a82f7_grande.png?v=1620818313"
+                    alt="">
+                <a href=""><button>buy now</button></a>
+            </div>
+            <div class="box">
+                <img src="https://cdn.shopify.com/s/files/1/0287/9651/8460/products/C_1.png?v=1588959865" alt="">
+                <a href=""><button>buy now</button></a>
+            </div>
+            <div class="box">
+                <img src="http://cdn.shopify.com/s/files/1/0057/8938/4802/products/4dccee60-c010-45c3-bf08-1634cb2bcc9c_1200x1200.png?v=1625046513"
+                    alt="">
+                <a href=""><button>buy now</button></a>
+            </div>
+            <div class="box">
+                <img src="https://images.jdmagicbox.com/quickquotes/images_main/noise-colorfit-pro-2-smart-watch-teal-green-178087473-47614.png"
+                    alt="">
+                <a href=""><button>buy now</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="theme-togler">
+        <i class="fas fa-sun active"></i>
+        <i class="fas fa-moon"></i>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.theme-togler i').click(function () {
+
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+
+            $('.theme-togler .fa-sun').click(function () {
+
+                $('.box-container').css('background', '#ddd')
+            });
+            $('.theme-togler .fa-moon').click(function () {
+
+                $('.box-container').css('background', '#111')
+            });
+        });
+    </script>
+</body>
+
+</html>
